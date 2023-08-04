@@ -7,33 +7,200 @@
       content="width=device-width, initial-scale=1,
       maximum-scale=5"/>
 
-    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="shortcut icon" href="images/triangleLogo.png" type="image/x-icon">
     <title>Windbnb</title>
 
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Mulish&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2fba3f7a77.js" crossorigin="anonymous"></script>
+    
+    <!-- Tailwind CSS and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+
+    <!-- Custom Style -->
     <style>
-      .font-poppins {
-        font-family: "Poppins", sans-serif;
+      .font-mont {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .font-mulish{
+        font-family: 'Mulish', sans-serif;
       }
 
     </style>
   </head>
-  <body class="font-poppins">
+  <body class="max-w-7xl mx-auto">
     <!-- Header Section -->
     <header>
-      <div>
-        
+      <div class="py-8">
+        <div class="navbar justify-center items-center flex flex-col lg:flex-row gap-4 lg:gap-4">
+          <div class="lg:flex-1">
+            <a href="" class="flex justify-center items-center">
+              <img src="images/logo.png" alt="">
+            </a>
+          </div>
+          <div class="form-control">
+            <div class="border-2 shadow-[0px_1px_6px_0px_rgba(0,0,0,0.10)] rounded-lg font-mulish text-sm font-normal">
+              <div class="flex justify-center items-center">
+                <span class="p-2 lg:p-5 border-r-2 text-[#333] text-sm lg:text-xl">Helsinki, Finland</span>
+
+                <input type="text" placeholder="Add guests" class="input p-1 lg:p-5  focus:outline-none border-none text-[#BDBDBD] text-sm lg:text-lg" />
+
+                <i class="border-l-2 fa-solid fa-magnifying-glass text-lg lg:text-xl p-2 lg:p-5  cursor-pointer text-[#EB5757]"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Main Section -->
     <main>
+      <!-- Stays in Finland Section -->
+      <section class="font-mont">
+        <div class="flex flex-col lg:flex-row justify-between items-center">
+          <h3 class="text-2xl text-[#333] font-bold">Stays in Finland</h3>
+          <h4 class="text-sm text-[#4F4F4F] font-normal">12+ stays</h4>
+        </div>
+        <!-- Card -->
+        <div class="mt-8 w-[100%] grid grid-cols-1 lg:grid-cols-3 lg:gap-5 justify-center items-center">
+          <!-- card-1 -->
+          <div class="card w-80 h-96 lg:w-96 justify-center items-center p-5">
+            <figure><img class="rounded-xl" src="images/p1.avif" alt="Hotel Room" /></figure>
+            <div class="flex flex-col py-4 justify-between ">
+              <div class="flex flex-row w-[100%] justify-between gap-1">
+                <div class="badge border-[#4F4F4F] uppercase text-[7px] font-bold lg:text-xs">
+                  Super host
+                </div>
+                <div class="text-xs lg:text-sm text-[#828282">
+                  <p>Entire apartment . 2 beds</p>
+                </div>
+                <div class="rating flex flex-row items-center gap-1">
+                  <input name="rating-2" class="mask mask-star-2 bg-[#EB5757]" checked />
+                  <span class="text-xs lg:text-sm"> 4.4</span>
 
+                </div>
+              </div>
+              <h2 class="card-title">
+                Stylist apartment in center of the city
+              </h2>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="card w-80 h-96 lg:w-96 justify-center items-center p-5">
+            <figure><img class="rounded-xl" src="images/p6.avif" alt="Hotel Room" /></figure>
+            <div class="flex flex-col py-4 justify-between ">
+              <div class="flex flex-row w-[100%] justify-between gap-1">
+                
+                <div class="text-xs lg:text-sm text-[#828282">
+                  <p>Private room </p>
+                </div>
+                <div class="rating flex flex-row items-center gap-1">
+                  <input name="rating-2" class="mask mask-star-2 bg-[#EB5757]" checked />
+                  <span class="text-xs lg:text-sm"> 4.85</span>
+
+                </div>
+              </div>
+              <h2 class="card-title">
+                Cozy, peaceful and private room with...
+              </h2>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="card w-80 h-96 lg:w-96 justify-center p-5">
+            <figure><img class="rounded-xl" src="images/p1.avif" alt="Hotel Room" /></figure>
+            <div class="flex flex-col py-4 justify-between">
+              <div class="flex flex-row w-[100%] justify-between gap-1">
+                <div class="text-xs lg:text-sm text-[#828282">
+                  <p>Entire house </p>
+                </div>
+                <div class="rating flex flex-row items-center gap-1">
+                  <input name="rating-2" class="mask mask-star-2 bg-[#EB5757]" checked />
+                  <span class="text-xs lg:text-sm"> 4.4</span>
+
+                </div>
+              </div>
+              <h2 class="card-title text-left">
+                Modern House in a remote  <br>
+                area 
+              </h2>
+            </div>
+          </div>
+          <!-- card-4 -->
+          <div class="card w-80 h-96 lg:w-96 justify-center p-5">
+            <figure><img class="rounded-xl" src="images/p1.avif" alt="Hotel Room" /></figure>
+            <div class="flex flex-col py-4 justify-between">
+              <div class="flex flex-row w-[100%] justify-between gap-1">
+                <div class="badge border-[#4F4F4F] uppercase text-[7px] font-bold lg:text-xs">
+                  Super host
+                </div>
+                <div class="text-xs lg:text-sm text-[#828282">
+                  <p>Entire apartment . 2 beds</p>
+                </div>
+                <div class="rating flex flex-row items-center gap-1">
+                  <input name="rating-2" class="mask mask-star-2 bg-[#EB5757]" checked />
+                  <span class="text-xs lg:text-sm"> 4.4</span>
+
+                </div>
+              </div>
+              <h2 class="card-title text-left">
+                Stylist room in design <br>
+                district 
+              </h2>
+            </div>
+          </div>
+          <!-- card-5 -->
+          <div class="card w-80 h-96 lg:w-96 justify-between p-5">
+            <figure><img class="rounded-xl" src="images/p6.avif" alt="Hotel Room" /></figure>
+            <div class="flex flex-col py-4 justify-between">
+              <div class="flex flex-row w-[100%] justify-between gap-1">
+                
+                <div class="text-xs lg:text-sm text-[#828282]">
+                  <p>Private room</p>
+                </div>
+                <div class="rating flex flex-row items-center gap-1">
+                  <input name="rating-2" class="mask mask-star-2 bg-[#EB5757]" checked />
+                  <span class="text-xs lg:text-sm"> 4.25</span>
+
+                </div>
+              </div>
+              <h2 class="card-title">
+                Modern apartment close to nature
+              </h2>
+            </div>
+          </div>
+          <!-- card-6 -->
+          <div class="card w-80 h-96 lg:w-96 justify-center p-5">
+            <figure><img class="rounded-xl" src="images/p1.avif" alt="Hotel Room" /></figure>
+            <div class="flex flex-col py-4 justify-between">
+              <div class="flex flex-row w-[100%] justify-between gap-1">
+                <div class="text-xs lg:text-sm text-[#828282">
+                  <p>Entire house </p>
+                </div>
+                <div class="rating flex flex-row items-center gap-1">
+                  <input name="rating-2" class="mask mask-star-2 bg-[#EB5757]" checked />
+                  <span class="text-xs lg:text-sm"> 4.4</span>
+
+                </div>
+              </div>
+              <h2 class="card-title text-left">
+                House in a remote  <br>
+                area 
+              </h2>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </main>
     <!-- Footer Section -->
+    <footer class="text-[#828282] text-center py-10 text-sm">
+      <p>created by <a class="font-bold" href="https://github.com/gmlincoln/">Golam Maula</a> - devChallenges.io</p>
+    </footer>
   </body>
 </html>
